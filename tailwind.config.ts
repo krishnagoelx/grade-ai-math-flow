@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Education platform specific colors
+				edu: {
+					primary: '#4F46E5', // Indigo shade for primary actions
+					secondary: '#F0F4FF', // Light blue background
+					success: '#22C55E', // Green for success states
+					warning: '#F59E0B', // Amber for warnings
+					error: '#EF4444', // Red for errors
+					info: '#3B82F6', // Blue for information
+					gray: '#F9FAFB', // Light gray for backgrounds
+					border: '#E5E7EB', // Border color
 				}
 			},
 			borderRadius: {
@@ -84,11 +96,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0'
+					},
+					to: {
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out'
 			}
 		}
 	},
