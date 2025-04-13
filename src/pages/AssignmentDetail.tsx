@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Upload, Share2, BarChart, FileText, FileUp, Download, Settings } from "lucide-react";
+import { ArrowLeft, Upload, Share2, BarChart, FileText, FileUp, Download, Settings, Eye } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 import { Badge } from "@/components/ui/badge";
