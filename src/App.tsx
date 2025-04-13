@@ -12,6 +12,10 @@ import GradingPage from "./pages/GradingPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import StudentView from "./pages/StudentView";
 import NotFound from "./pages/NotFound";
+import ClassDetail from "./pages/ClassDetail";
+import AssignmentDetail from "./pages/AssignmentDetail";
+import AssignmentSetup from "./pages/AssignmentSetup";
+import AssignmentAnalytics from "./pages/AssignmentAnalytics";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -28,6 +32,10 @@ const App = () => {
               <Route path="/" element={<AppLayout />}>
                 <Route index element={<Dashboard />} />
                 <Route path="dashboard" element={<Dashboard />} />
+                <Route path="class/:classId" element={<ClassDetail />} />
+                <Route path="assignment/:assignmentId" element={<AssignmentDetail />} />
+                <Route path="assignment/setup/:assignmentId" element={<AssignmentSetup />} />
+                <Route path="assignment/:assignmentId/analytics" element={<AssignmentAnalytics />} />
                 <Route path="create-assignment" element={<CreateAssignment />} />
                 <Route path="grading" element={<GradingPage />} />
                 <Route path="analytics" element={<AnalyticsPage />} />
